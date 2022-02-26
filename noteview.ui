@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>notesList</class>
- <widget class="QDialog" name="notesList">
+ <class>noteView</class>
+ <widget class="QDialog" name="noteView">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,25 +11,25 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>notesList</string>
+   <string>Dialog</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
-    <widget class="QListWidget" name="NotesList"/>
+    <widget class="QTextEdit" name="body"/>
    </item>
    <item>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QPushButton" name="btn_add">
+      <widget class="QPushButton" name="btn_edit">
        <property name="text">
-        <string>Add</string>
+        <string>Edit</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_del">
+      <widget class="QPushButton" name="btn_save">
        <property name="text">
-        <string>Delete</string>
+        <string>Save</string>
        </property>
       </widget>
      </item>
@@ -50,7 +50,6 @@
    </item>
   </layout>
  </widget>
- <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
